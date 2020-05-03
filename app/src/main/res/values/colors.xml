@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="colorPrimaryDark">#004ba0</color>
+    <color name="colorAccent">#63a4ff</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="white">#FFF</color>
+    <color name="light_blue">#bbdefb</color>
+    <color name="active">#2196f3</color>
+    <color name="black">#000</color>
+    <color name="light_black">#373737</color>
+    <color name="warning_color">#f4511e</color>
+    <color name="colorControlActivated">#502196f3</color>
+    <color name="msg_no_notes">#999</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="note_list_text">#232323</color>
+    <color name="timestamp">#858585</color>
+
+</resources>

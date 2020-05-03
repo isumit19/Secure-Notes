@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="24dp"
+    android:id="@+id/linearLayout">
+
+
+    <ImageView
+        android:id="@+id/cancelIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/baseline_clear_24" />
+
+    <ImageView
+        android:id="@+id/fingerprintIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/outline_fingerprint_24" />
+
+    <TextView
+        android:id="@+id/fingerprint_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="24dp"
+        android:text="@string/fingerprint_hint"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:id="@+id/usePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_keyboard_24" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/usePassword"
+            android:gravity="center_vertical"
+            android:text="Use Password"
+            android:textColor="@color/warning_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

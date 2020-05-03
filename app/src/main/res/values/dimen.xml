@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="dot_margin_right">10dp</dimen>
+    <dimen name="msg_no_notes">26sp</dimen>
+    <dimen name="margin_top_no_notes">120dp</dimen>
+    <dimen name="lbl_new_note_title">20sp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="input_new_note">20sp</dimen>
+    <dimen name="dot_height">30dp</dimen>
+    <dimen name="dot_text_size">40sp</dimen>
+    <dimen name="timestamp">14sp</dimen>
+    <dimen name="note_list_text">18sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dimen_4x">4dp</dimen>
+    <dimen name="dimen_8x">8dp</dimen>
+    <dimen name="dimen_16x">16dp</dimen>
+    <dimen name="dimen_32x">32dp</dimen>
+    <dimen name="dimen_48x">48dp</dimen>
+    <dimen name="dimen_64x">64dp</dimen>
+
+    <dimen name="text_8x">8sp</dimen>
+    <dimen name="text_16x">16sp</dimen>
+    <dimen name="text_32x">32sp</dimen>
+    <dimen name="text_48x">48sp</dimen>
+    <dimen name="text_64x">64sp</dimen>
+</resources>
