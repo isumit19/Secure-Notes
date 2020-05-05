@@ -8,23 +8,33 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.NoteListAcitivity"></activity>
-        <activity
-            android:name=".activity.MainActivity"
-            android:configChanges="orientation|screenSize"
+        <activity android:name=".activity.NoteListAcitivity"
+            android:resizeableActivity="false"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeNoAction">
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:resizeableActivity="false"
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction"
+            android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.NoteActivity"/>
-        <activity android:name=".activity.About"/>
+        <activity android:name=".activity.NoteActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".activity.About"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
     </application>
 
 </manifest>

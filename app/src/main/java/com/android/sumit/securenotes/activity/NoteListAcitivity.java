@@ -145,6 +145,7 @@ public class NoteListAcitivity extends AppCompatActivity implements SessionListe
             selectedIds.clear();
         }
 
+
         @Override
         public boolean onActionItemClicked(final ActionMode actionMode, MenuItem menuItem) {
             if (menuItem.getItemId() == R.id.action_delete) {
@@ -187,6 +188,7 @@ public class NoteListAcitivity extends AppCompatActivity implements SessionListe
             fab.setVisibility(View.VISIBLE);
         }
     };
+
 
 
     @Override
@@ -373,9 +375,12 @@ public class NoteListAcitivity extends AppCompatActivity implements SessionListe
 
 
 
+
+
     @Override
     protected void onResume() {
         super.onResume();
+
 
         app.cancelBackgroundSession();
         if(backgroundSessionTimeout)

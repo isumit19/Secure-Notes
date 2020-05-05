@@ -3,7 +3,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="login">Log In</string>
+    <string name="login">LogIn</string>
     <string name="register">Register</string>
     <string name="email">E-mail</string>
     <string name="bt_register">Register</string>
@@ -52,5 +52,6 @@
     <string name="title_activity_about">About Us</string>
     <string name="selected">selected</string>
     <string name="arrow_down">Arrow Down</string>
+    <string name="to_edit_click_the_edit_icon_in_the_top_right_corner">To Edit, click the edit icon in the top right corner</string>
 
 </resources>

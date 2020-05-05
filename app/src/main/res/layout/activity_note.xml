@@ -79,7 +79,7 @@
             android:id="@+id/guide"
             android:visibility="invisible"
             android:textAlignment="center"
-            android:text="To Edit, click the edit icon in the top left corner"/>
+            android:text="@string/to_edit_click_the_edit_icon_in_the_top_right_corner"/>
     </LinearLayout>
 
 

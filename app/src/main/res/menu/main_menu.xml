@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/delete"
-        android:title="delete"
+        android:title="Delete"
         android:orderInCategory="1"
         android:icon="@drawable/ic_delete_forever"
         app:showAsAction="always">
 </item>
     <item
         android:id="@+id/edit"
-        android:title="edit"
+        android:title="Edit"
         android:orderInCategory="2"
         android:icon="@drawable/ic_mode_edit"
         android:visible="false"
@@ -20,7 +20,7 @@
 
     <item
         android:id="@+id/done"
-        android:title="done"
+        android:title="Done"
         android:orderInCategory="2"
         android:icon="@drawable/ic_done"
         android:visible="false"

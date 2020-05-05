@@ -84,13 +84,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
-        android:layout_marginLeft="@dimen/dimen_32x"
-        android:layout_marginRight="@dimen/dimen_32x"
         android:layout_marginTop="32dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:gravity="center"
         android:onClick="clickF"
-        android:text="Login"
+        android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/white" />
 

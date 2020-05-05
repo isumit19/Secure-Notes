@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void Encryption(String s){
+    public void Encryption(String s) {
         try {
             keyGenerator = KeyGenerator.getInstance("AES");
         } catch (NoSuchAlgorithmException e) {
@@ -282,24 +282,20 @@ public class MainActivity extends AppCompatActivity {
         keyGenerator.init(256);
         SecretKey secretKey = keyGenerator.generateKey();
         byte[] secreKeyEnc = secretKey.getEncoded();
-        String strSecretKey = Encode(secreKeyEnc);
 
         SecureRandom secureRandom = new SecureRandom();
         byte[] IV = new byte[16];
         secureRandom.nextBytes(IV);
 
         try {
-            byte[] cipherText = Encrypt.encrypt(s.trim().getBytes(),secretKey, IV);
+            byte[] cipherText = Encrypt.encrypt(s.trim().getBytes(), secretKey, IV);
             String cipher = Encode(cipherText);
             String striv = Encode(IV);
-
-            sharedPreferences.edit().putString("cipher",cipher).putString("iv",striv).putString("secretkey",strSecretKey).apply();
-
-
+            String strSecretKey = Encode(secreKeyEnc);
+            sharedPreferences.edit().putString("cipher", cipher).putString("iv", striv).putString("secretkey", strSecretKey).apply();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
     public static String Encode(byte[] decval) {
         String conVal= Base64.encodeToString(decval,Base64.DEFAULT);
