@@ -383,16 +383,16 @@ public class MainActivity extends AppCompatActivity {
             String decryptedText = Decrypt.decrypt(pass_arr,secretKey,iv_arr);
 
 
-                if (pwd.getText().toString().equals(decryptedText)) {
-                    pwd.setText("");
-                    Intent it = new Intent(MainActivity.this, NoteListAcitivity.class);
-                    it.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(it);
-                } else {
+            if (pwd.getText().toString().equals(decryptedText)) {
+                pwd.setText("");
+                Intent it = new Intent(MainActivity.this, NoteListAcitivity.class);
+                it.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(it);
+            } else {
 
-                    pwd.setText("");
-                    pwdInputLayout.setError(getString(R.string.password_wrong));
-                }
+                pwd.setText("");
+                pwdInputLayout.setError(getString(R.string.password_wrong));
+            }
 
 
         } else {

@@ -380,6 +380,8 @@ public class NoteListAcitivity extends AppCompatActivity implements SessionListe
     @Override
     protected void onResume() {
         super.onResume();
+        notesList.clear();
+        notesList.addAll(db.getAllNotes());
 
 
         app.cancelBackgroundSession();
