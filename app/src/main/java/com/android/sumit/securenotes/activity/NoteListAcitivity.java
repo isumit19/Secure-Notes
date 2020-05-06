@@ -225,7 +225,7 @@ public class NoteListAcitivity extends AppCompatActivity implements SessionListe
 
         db = new DatabaseHelper(getApplicationContext());
 
-        notesList.addAll(db.getAllNotes());
+
 
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -382,6 +382,7 @@ public class NoteListAcitivity extends AppCompatActivity implements SessionListe
         super.onResume();
         notesList.clear();
         notesList.addAll(db.getAllNotes());
+
 
 
         app.cancelBackgroundSession();
